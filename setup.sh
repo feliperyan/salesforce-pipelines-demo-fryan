@@ -34,10 +34,10 @@ STAGING_USERNAME="TestOrg"
 PROD_USERNAME="ProdOrg"
 
 # Repository with your code
-GITHUB_REPO="wadewegner/salesforce-dx-pipeline-sample"
+GITHUB_REPO="feliperyan/salesforce-pipelines-demo-fryan"
 
 # Your package name
-PACKAGE_NAME="PipelineSamplePackage2"
+PACKAGE_NAME="PipelineDemoFryan1"
 
 ### Setup script
 
