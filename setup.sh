@@ -28,10 +28,10 @@ HEROKU_PROD_APP_NAME="prd-$HEROKU_APP_NAME"
 HEROKU_PIPELINE_NAME="salesforce-pipeline-demo-fryan"
 
 # Usernames or aliases of the orgs you're using
-DEV_HUB_USERNAME="HubOrg"
-DEV_USERNAME="DevOrg"
-STAGING_USERNAME="TestOrg"
-PROD_USERNAME="ProdOrg"
+DEV_HUB_USERNAME="spring19prerel"
+DEV_USERNAME="DevSandbox1"
+STAGING_USERNAME="DevSandbox1"
+PROD_USERNAME="DevSandbox1"
 
 # Repository with your code
 GITHUB_REPO="feliperyan/salesforce-pipelines-demo-fryan"
