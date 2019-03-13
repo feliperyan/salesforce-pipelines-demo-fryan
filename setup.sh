@@ -20,7 +20,7 @@ HEROKU_TEAM_NAME="sfdx-emea-north"
 HEROKU_APP_NAME="salesforce-fryan-demo"
 
 # Name of the Heroku apps you'll use
-HEROKU_DEV_APP_NAME="dev-$HEROKU_APP_NAME"
+HEROKU_DEV_APP_NAME="dev1-$HEROKU_APP_NAME"
 HEROKU_STAGING_APP_NAME="stg-$HEROKU_APP_NAME"
 HEROKU_PROD_APP_NAME="prd-$HEROKU_APP_NAME"
 
