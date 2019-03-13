@@ -37,7 +37,7 @@ PROD_USERNAME="DevSandbox1"
 GITHUB_REPO="feliperyan/salesforce-pipelines-demo-fryan"
 
 # Your package name
-PACKAGE_NAME="PipelineDemoFryan1"
+PACKAGE_NAME="FryanCustomGraphV1"
 
 ### Setup script
 
