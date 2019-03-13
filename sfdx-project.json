@@ -2,10 +2,16 @@
     "packageDirectories": [
         {
             "path": "force-app",
-            "default": true            
+            "default": true,
+            "package": "FryanCustomGraphV2",
+            "versionName": "ver 0.1",
+            "versionNumber": "0.1.0.NEXT"
         }
     ],
     "namespace": "",
     "sfdcLoginUrl": "https://login.salesforce.com",
-    "sourceApiVersion": "45.0"
+    "sourceApiVersion": "45.0",
+    "packageAliases": {
+        "FryanCustomGraphV2": "0Ho1U000000PAx8SAG"
+    }
 }
