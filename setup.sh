@@ -28,7 +28,7 @@ HEROKU_PROD_APP_NAME="prd-$HEROKU_APP_NAME"
 HEROKU_PIPELINE_NAME="salesforce-pipeline-demo-fryan"
 
 # Usernames or aliases of the orgs you're using
-DEV_HUB_USERNAME="spring19prerel"
+DEV_HUB_USERNAME="AnaDevHub"
 DEV_USERNAME="DevSandbox1"
 STAGING_USERNAME="DevSandbox1"
 PROD_USERNAME="DevSandbox1"
@@ -37,7 +37,7 @@ PROD_USERNAME="DevSandbox1"
 GITHUB_REPO="feliperyan/salesforce-pipelines-demo-fryan"
 
 # Your package name
-PACKAGE_NAME="FryanCustomGraphV1"
+PACKAGE_NAME="FryanCustomGraphV2"
 
 ### Setup script
 
@@ -108,9 +108,9 @@ heroku buildpacks:add -i 1 https://github.com/heroku/salesforce-cli-buildpack#v3
 heroku buildpacks:add -i 1 https://github.com/heroku/salesforce-cli-buildpack#v3 -a $HEROKU_STAGING_APP_NAME
 heroku buildpacks:add -i 1 https://github.com/heroku/salesforce-cli-buildpack#v3 -a $HEROKU_PROD_APP_NAME
 
-heroku buildpacks:add -i 2 https://github.com/heroku/salesforce-buildpack#v3 -a $HEROKU_DEV_APP_NAME
-heroku buildpacks:add -i 2 https://github.com/heroku/salesforce-buildpack#v3 -a $HEROKU_STAGING_APP_NAME
-heroku buildpacks:add -i 2 https://github.com/heroku/salesforce-buildpack#v3 -a $HEROKU_PROD_APP_NAME
+heroku buildpacks:add -i 2 https://github.com/heroku/salesforce-buildpack -a $HEROKU_DEV_APP_NAME
+heroku buildpacks:add -i 2 https://github.com/heroku/salesforce-buildpack -a $HEROKU_STAGING_APP_NAME
+heroku buildpacks:add -i 2 https://github.com/heroku/salesforce-buildpack -a $HEROKU_PROD_APP_NAME
 
 # Create Pipeline
 # Valid stages: "test", "review", "development", "staging", "production"
@@ -120,7 +120,7 @@ heroku buildpacks:add -i 2 https://github.com/heroku/salesforce-buildpack#v3 -a 
 
 # Setup your pipeline
 # heroku pipelines:connect $HEROKU_PIPELINE_NAME --repo $GITHUB_REPO
-# heroku reviewapps:enable -p $HEROKU_PIPELINE_NAME -a $HEROKU_DEV_APP_NAME --autodeploy --autodestroy
+heroku reviewapps:enable -p $HEROKU_PIPELINE_NAME -a $HEROKU_DEV_APP_NAME --autodeploy --autodestroy
 
 heroku ci:config:set -p $HEROKU_PIPELINE_NAME SFDX_DEV_HUB_AUTH_URL=$devHubSfdxAuthUrl
 heroku ci:config:set -p $HEROKU_PIPELINE_NAME SFDX_AUTH_URL=$devSfdxAuthUrl
