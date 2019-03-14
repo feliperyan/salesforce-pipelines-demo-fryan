@@ -20,7 +20,7 @@ HEROKU_TEAM_NAME="sfdx-emea-north"
 HEROKU_APP_NAME="salesforce-fryan-demo"
 
 # Name of the Heroku apps you'll use
-HEROKU_DEV_APP_NAME="dev1-$HEROKU_APP_NAME"
+HEROKU_DEV_APP_NAME="devbox1-$HEROKU_APP_NAME"
 HEROKU_STAGING_APP_NAME="stg-$HEROKU_APP_NAME"
 HEROKU_PROD_APP_NAME="prd-$HEROKU_APP_NAME"
 
@@ -29,15 +29,15 @@ HEROKU_PIPELINE_NAME="salesforce-pipeline-demo-fryan"
 
 # Usernames or aliases of the orgs you're using
 DEV_HUB_USERNAME="AnaDevHub"
-DEV_USERNAME="DevSandbox1"
-STAGING_USERNAME="DevSandbox1"
-PROD_USERNAME="DevSandbox1"
+DEV_USERNAME="FullCopyUAT"
+STAGING_USERNAME="FullCopyUAT"
+PROD_USERNAME="FullCopyUAT"
 
 # Repository with your code
 GITHUB_REPO="feliperyan/salesforce-pipelines-demo-fryan"
 
 # Your package name
-PACKAGE_NAME="FryanCustomGraphV2"
+PACKAGE_NAME="FryanCustomGraphV3"
 
 ### Setup script
 

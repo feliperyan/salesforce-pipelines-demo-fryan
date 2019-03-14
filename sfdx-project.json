@@ -3,16 +3,15 @@
         {
             "path": "force-app",
             "default": true,
-            "package": "FryanCustomGraphV2",
-            "versionName": "ver 1.0.0.0",
-            "versionNumber": "1.0.0.NEXT"
+            "package": "FryanCustomGraphV3",
+            "versionName": "ver 0.1",
+            "versionNumber": "0.1.0.NEXT"
         }
     ],
     "namespace": "",
     "sfdcLoginUrl": "https://login.salesforce.com",
     "sourceApiVersion": "45.0",
     "packageAliases": {
-        "FryanCustomGraphV2": "0Ho1U000000PAx8SAG",
-        "FryanCustomGraphV2@1.0.0-1": "04t1U000006YDCAQA4"
+        "FryanCustomGraphV3": "0Ho1U000000PAxcSAG"
     }
 }
