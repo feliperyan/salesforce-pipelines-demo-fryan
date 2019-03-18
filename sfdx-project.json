@@ -2,10 +2,17 @@
     "packageDirectories": [
         {
             "path": "force-app",
-            "default": true
+            "default": true,
+            "package": "FryanCustomPackV1",
+            "versionName": "ver 0.1",
+            "versionNumber": "0.1.0.NEXT"
         }
     ],
     "namespace": "",
     "sfdcLoginUrl": "https://login.salesforce.com",
-    "sourceApiVersion": "45.0"
+    "sourceApiVersion": "45.0",
+    "packageAliases": {
+        "FryanCustomPackV1": "0Ho1i000000000VCAQ",
+        "FryanCustomPackV1@0.1.0-1": "04t1i000000haXdAAI"
+    }
 }
