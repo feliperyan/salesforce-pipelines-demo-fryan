@@ -18,7 +18,11 @@
       },
       {
         "url": "https://github.com/heroku/salesforce-buildpack"
+      },
+      {
+        "url": "https://github.com/heroku/heroku-buildpack-python"
       }
+
     ],
     "env": {
       "SFDX_DEV_HUB_AUTH_URL": {

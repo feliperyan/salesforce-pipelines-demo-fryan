@@ -28,16 +28,16 @@ HEROKU_PROD_APP_NAME="prd-$HEROKU_APP_NAME"
 HEROKU_PIPELINE_NAME="salesforce-pipeline-demo-fryan"
 
 # Usernames or aliases of the orgs you're using
-DEV_HUB_USERNAME="AnaDevHub"
-DEV_USERNAME="FullCopyUAT"
-STAGING_USERNAME="FullCopyUAT"
-PROD_USERNAME="FullCopyUAT"
+DEV_HUB_USERNAME="DevHub1"
+DEV_USERNAME="DevOrg1"
+STAGING_USERNAME="DevOrg1"
+PROD_USERNAME="DevOrg1"
 
 # Repository with your code
 GITHUB_REPO="feliperyan/salesforce-pipelines-demo-fryan"
 
 # Your package name
-PACKAGE_NAME="FryanCustomGraphV3"
+PACKAGE_NAME="FryanCustomPackV1"
 
 ### Setup script
 
