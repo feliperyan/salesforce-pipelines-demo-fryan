@@ -1,7 +1,7 @@
 from http.server import BaseHTTPRequestHandler, HTTPServer
 import os
 
-PORT_NUMBER = os.getenv('PORT', 8080)
+PORT_NUMBER = int(os.getenv('PORT', 8080))
 APP_NAME = os.getenv('HEROKU_APP_NAME', '')
 
 #This class will handles any incoming request from
