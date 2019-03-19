@@ -29,10 +29,10 @@ def get_auth_url(api_key, app_name):
         lines = r2.text.split('\n')
         if len(lines) > 0:
             for l in lines:
-                if 'scratchSfdxAuthUrl' in l:
-                    sfdx_scratchie_url = l[l.index('force'):]
+                if 'following URL:' in l:
+                    sfdx_scratchie_url = l[l.index('https'):]
             if sfdx_scratchie_url == '':
-                return 'ERROR: scratchSfdxAuthUrl was not found in output_stream_url'
+                return 'ERROR: URL for ScratchOrg was not found in output_stream_url. Did you set "show-scratch-org-url: true" within sfdx.yml?'
     else:
         return 'ERROR: getting the output_stream_url from releases failed: '+str(r2.json())
 
