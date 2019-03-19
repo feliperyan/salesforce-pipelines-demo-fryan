@@ -1,8 +1,11 @@
 from http.server import BaseHTTPRequestHandler, HTTPServer
 import os
+from get_sfdx_auth_url import *
 
 PORT_NUMBER = os.getenv('PORT', 8080)
 APP_NAME = os.getenv('HEROKU_APP_NAME', '')
+API_KEY_HEROKU = os.getenv('API_KEY_HEROKU', '')
+
 
 #This class will handles any incoming request from
 #the browser 
@@ -14,8 +17,7 @@ class myHandler(BaseHTTPRequestHandler):
         self.send_header('Content-type','text/html')
         self.end_headers()
         
-        # Send the html message
-        link = 'https://www.salesforce.com'
+        link = get_auth_url(API_KEY_HEROKU, APP_NAME)
         payload = '<html><body><a href="' + link + '">link here</a></body></html>'
         
         self.wfile.write(bytes(payload, encoding='utf-8'))

@@ -32,6 +32,9 @@
       },
       "HEROKU_APP_NAME" : {
         "required": true
+      },
+      "API_KEY_HEROKU" : {
+        "required": true
       }
     },
     "environments": {
